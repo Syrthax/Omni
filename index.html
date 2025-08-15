@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
     <script>
-      // Dynamically set theme color for all browsers
       function setThemeColor() {
         const meta = document.querySelector('meta[name="theme-color"]');
         if (meta) {
@@ -26,17 +25,13 @@
     </script>
   </head>
   <body>
-    <!-- Background canvas with animated blobs -->
     <div id="bg" aria-hidden="true">
       <span class="blob b1"></span>
       <span class="blob b2"></span>
       <span class="blob b3"></span>
       <span class="grain" aria-hidden="true"></span>
     </div>
-
-    <!-- Wrap the whole page so we can apply stretch transform -->
     <div id="page">
-      <!-- Navigation -->
 <header class="nav glass" role="banner">
     <a class="brand" href="#home" aria-label="Home">
       <img src="assets/main.svg" alt="Logo" width="28" height="28" />
@@ -49,9 +44,7 @@
     </nav>
   </header>
     <div id="nav-spacer" aria-hidden="true"></div>
-
       <main id="home">
-        <!-- Hero -->
         <section class="hero">
           <div class="hero__card glass" data-reveal data-tilt>
             <div class="badge glass subtle">
@@ -75,8 +68,6 @@
             </ul>
           </div>
         </section>
-
-        <!-- About -->
         <section id="about" class="section">
           <div class="grid">
             <article class="card glass" data-reveal data-tilt>
@@ -102,8 +93,6 @@
             </article>
           </div>
         </section>
-
-        <!-- Work -->
         <section id="work" class="section">
           <h2 class="section__title" data-reveal>Building</h2>
           <div class="work grid">
@@ -127,8 +116,6 @@
             </a>
           </div>
         </section>
-
-        <!-- Contact -->
         <section id="contact" class="section">
           <div class="contact__card glass" data-reveal data-tilt>
             <h2>Let’s build something thoughtful.</h2>
@@ -142,12 +129,10 @@
           </div>
         </section>
       </main>
-
       <footer class="footer">
         <p>© <span id="year"></span> Sarthak. Built with ❤️ in India.</p>
       </footer>
     </div>
-
     <noscript>
       <style>
         [data-reveal]{opacity:1;transform:none}
